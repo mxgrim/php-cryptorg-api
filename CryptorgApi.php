@@ -1,6 +1,8 @@
 <?php
 
-class CryptorgApi {
+namespace Cryptorg;
+
+class Api {
 
     const API_URL = 'https://api.cryptorg.net';
 

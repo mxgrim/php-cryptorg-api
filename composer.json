@@ -1,0 +1,23 @@
+{
+    "name": "mxgrim/php-cryptorg-api",
+    "description": "",
+    "keywords": ["garantexio","cryptocurrency","Garantex"],
+    "license": "MIT",
+    "repositories": [ {
+            "type": "vcs",
+            "url": "https://github.com/mxgrim/php-cryptorg-api"
+    }],
+    "require": {
+        "php": ">=7.1",
+        "ext-curl": "*"
+    },
+    "config": {
+    	"optimize-autoloader": true,
+        "minimum-stability": "stable"
+    },
+    "autoload": {
+        "classmap": [
+          "CryptorgApi.php"
+        ]
+    }
+}
