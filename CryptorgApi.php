@@ -263,7 +263,7 @@ class Api {
         $query = json_encode($params == null ?  '' : http_build_query($params));
         $query = str_replace('"', '', $query);
 
-        $currentDate = new DateTime();
+        $currentDate = new \DateTime();
         $nonce = $currentDate->getTimestamp();
 
         $strForSign = $url . '/' . $nonce . '/' . $query;
