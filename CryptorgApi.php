@@ -258,7 +258,7 @@ class Api {
      * @param string | null $attributes
      * @return array
      */
-    private function sendRequest($method, $url, $params = null, $attributes = null) {
+    protected function sendRequest($method, $url, $params = null, $attributes = null) {
 
         $query = json_encode($params == null ?  '' : http_build_query($params));
         $query = str_replace('"', '', $query);
